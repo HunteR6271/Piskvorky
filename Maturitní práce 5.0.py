@@ -8,6 +8,7 @@ a = int(input())
 print("Zadej počet sloupců: ")
 b = int(input())
 
+#Vykreslení pole
 def velikost_pole(a,b):
 	print("Počet řádků",a ,"Počet sloupců", b)
 	for x in range(a):
@@ -19,6 +20,7 @@ turn = "X"
 turnLabel= Label(master, text=turn, font="Helvetica 16 bold")
 turnLabel.grid(row=a, columnspan=b)
 
+#Zobrazení kdo je na tahu.
 def change_turn():
     global turn
     if turn == "O":
@@ -28,6 +30,7 @@ def change_turn():
         turn = "O"
         turnLabel.config(text=turn)
 
+#Změna pole na křížek nebo kolečko po kliknutí.
 def zmena_pole():
 	global text
 	print ("x")

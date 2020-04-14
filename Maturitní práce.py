@@ -3,13 +3,13 @@ print("Vítám Vás u mé maturitní práce piškvorky")
 master = Tk()
 master.title("Piškvorky")
 
-
+#Zadání hodnot pro velikost pole.
 print("Zadej počet řádků: ")
 a = int(input())
 print("Zadej počet sloupců: ")
 b = int(input())
 
-#Vykreslení pole
+#Funkce vykreslení pole
 def velikost_pole(a,b):
 	print("Počet řádků",a ,"Počet sloupců", b)
 	for x in range(a):
@@ -22,7 +22,7 @@ turn = "X"
 turnLabel= Label(master, text=turn, font="Helvetica 20 bold")
 turnLabel.grid(row=a, columnspan=b)
 
-#Zobrazení kdo je na tahu.
+#Funkce zobrazení kdo je na tahu.
 def change_turn():
     global turn
     if turn == "O":
@@ -32,8 +32,9 @@ def change_turn():
         turn = "O"
         turnLabel.config(text=turn)
 
-#Změna pole na křížek nebo kolečko po kliknutí.
+#Funkce, která vytváří další funkce.
 def create_functions(tlacitko_funkce):
+	#Funkce měnící text v tlačítku.
 	def zmena_pole():
 		tlacitko_funkce.config(text=turn)
 		change_turn()

@@ -14,7 +14,7 @@ def velikost_pole(a,b):
 	print("Počet řádků",a ,"Počet sloupců", b)
 	for x in range(a):
 		for y in range(b):
-			button = Button(master, text="", height=6, width=10, font="Helvetica 12 bold")
+			button = Button(master, text="", height=6, width=10, font="Helvetica 15 bold", bg='grey', fg='white')
 			button.config(command = create_functions(button))
 			button.grid(row=x, column=y)
 	 

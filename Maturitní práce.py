@@ -43,14 +43,11 @@ def create_functions(tlacitko_funkce):
 		tlacitko_funkce.config(text=turn)
 		change_turn()
 	return zmena_pole
-
+#Funkce vyhodnocení kdo vyhrál.
 def vyhodnoceni():
-	for button in seznam_tlacitek:
-		print(button["text"])
+	if seznam_tlacitek[3] ['text'] == seznam_tlacitek[4] ['text'] == seznam_tlacitek[5] ['text']:
+		print (f"Vyhrál hráč {seznam_tlacitek[3] ['text']}")
 	
-	
-	
-
 velikost_pole(a,b)   
 master.mainloop()
 

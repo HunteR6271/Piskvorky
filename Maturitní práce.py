@@ -45,8 +45,12 @@ def create_functions(tlacitko_funkce):
 	return zmena_pole
 #Funkce vyhodnocení kdo vyhrál.
 def vyhodnoceni():
-	if seznam_tlacitek[3] ['text'] == seznam_tlacitek[4] ['text'] == seznam_tlacitek[5] ['text']:
-		print (f"Vyhrál hráč {seznam_tlacitek[3] ['text']}")
+	for i in range(a):
+		if seznam_tlacitek[3*i] ['text'] == seznam_tlacitek[3*i+1] ['text'] == seznam_tlacitek[3*i+2] ['text']:
+			print (f"Vyhrál hráč {seznam_tlacitek[3*i] ['text']}")
+	for z in range(b):
+		if seznam_tlacitek[3*z] ['text'] == seznam_tlacitek[3*z+1] ['text'] == seznam_tlacitek[3*z+2] ['text']:
+			print (f"Vyhrál hráč {seznam_tlacitek[3*z] ['text']}")
 	
 velikost_pole(a,b)   
 master.mainloop()

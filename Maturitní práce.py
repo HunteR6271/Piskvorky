@@ -49,8 +49,8 @@ def vyhodnoceni():
 		if seznam_tlacitek[3*i] ['text'] == seznam_tlacitek[3*i+1] ['text'] == seznam_tlacitek[3*i+2] ['text']:
 			print (f"Vyhrál hráč {seznam_tlacitek[3*i] ['text']}")
 	for z in range(b):
-		if seznam_tlacitek[3*z] ['text'] == seznam_tlacitek[3*z+1] ['text'] == seznam_tlacitek[3*z+2] ['text']:
-			print (f"Vyhrál hráč {seznam_tlacitek[3*z] ['text']}")
+		if seznam_tlacitek[z] ['text'] == seznam_tlacitek[z+3] ['text'] == seznam_tlacitek[z+6] ['text']:
+			print (f"Vyhrál hráč {seznam_tlacitek[z] ['text']}")
 	
 velikost_pole(a,b)   
 master.mainloop()

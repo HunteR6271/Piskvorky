@@ -45,13 +45,18 @@ def create_functions(tlacitko_funkce):
 	return zmena_pole
 #Funkce vyhodnocení kdo vyhrál.
 def vyhodnoceni():
+	#Vyhrává řádek
 	for i in range(a):
-		if seznam_tlacitek[3*i] ['text'] == seznam_tlacitek[3*i+1] ['text'] == seznam_tlacitek[3*i+2] ['text']!="":
+		if seznam_tlacitek[3*i] ['text'] == seznam_tlacitek[3*i+1] ['text'] == seznam_tlacitek[3*i+2] ['text'] != "":
 			print (f"Vyhrál hráč {seznam_tlacitek[3*i] ['text']}")
+	#Vyhrává sloupec
 	for z in range(b):
-		if seznam_tlacitek[z] ['text'] == seznam_tlacitek[z+3] ['text'] == seznam_tlacitek[z+6] ['text']!="":
+		if seznam_tlacitek[z] ['text'] == seznam_tlacitek[z+3] ['text'] == seznam_tlacitek[z+6] ['text'] != "":
 			print (f"Vyhrál hráč {seznam_tlacitek[z] ['text']}")
-	
+	for p in range(a-2):
+		if seznam_tlacitek[p*3] ['text'] == seznam_tlacitek[p*3+4] ['text'] == seznam_tlacitek[p*3+8] ['text'] != "":
+			print (f"Vyhrál hráč {seznam_tlacitek[p*3] ['text']}")
+
 velikost_pole(a,b)   
 master.mainloop()
 

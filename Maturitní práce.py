@@ -47,13 +47,15 @@ def create_functions(tlacitko_funkce):
 def vyhodnoceni():
 	#Vyhrává řádek
 	for i in range(a):
-		if seznam_tlacitek[3*i] ['text'] == seznam_tlacitek[3*i+1] ['text'] == seznam_tlacitek[3*i+2] ['text'] != "":
-			print (f"Vyhrál hráč {seznam_tlacitek[3*i] ['text']}")
+		for
+			if seznam_tlacitek[b*i] ['text'] == seznam_tlacitek[b*i+1] ['text'] == seznam_tlacitek[b*i+2] ['text'] != "":
+				print (f"Vyhrál hráč {seznam_tlacitek[b*i] ['text']}")
 	#Vyhrává sloupec
 	for z in range(b):
-		if seznam_tlacitek[z] ['text'] == seznam_tlacitek[z+3] ['text'] == seznam_tlacitek[z+6] ['text'] != "":
+		if seznam_tlacitek[z] ['text'] == seznam_tlacitek[z+b] ['text'] == seznam_tlacitek[z+2*b] ['text'] != "":
 			print (f"Vyhrál hráč {seznam_tlacitek[z] ['text']}")
-	for p in range(a-2):
+	#Vyhráva diagonála z leva do prava
+	for p in range(a-b+1):
 		if seznam_tlacitek[p*3] ['text'] == seznam_tlacitek[p*3+4] ['text'] == seznam_tlacitek[p*3+8] ['text'] != "":
 			print (f"Vyhrál hráč {seznam_tlacitek[p*3] ['text']}")
 

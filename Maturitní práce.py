@@ -47,7 +47,6 @@ def create_functions(tlacitko_funkce):
 def vyhodnoceni():
 	#Vyhrává řádek
 	for i in range(a):
-		for
 			if seznam_tlacitek[b*i] ['text'] == seznam_tlacitek[b*i+1] ['text'] == seznam_tlacitek[b*i+2] ['text'] != "":
 				print (f"Vyhrál hráč {seznam_tlacitek[b*i] ['text']}")
 	#Vyhrává sloupec
@@ -55,9 +54,13 @@ def vyhodnoceni():
 		if seznam_tlacitek[z] ['text'] == seznam_tlacitek[z+b] ['text'] == seznam_tlacitek[z+2*b] ['text'] != "":
 			print (f"Vyhrál hráč {seznam_tlacitek[z] ['text']}")
 	#Vyhráva diagonála z leva do prava
-	for p in range(a-b+1):
-		if seznam_tlacitek[p*3] ['text'] == seznam_tlacitek[p*3+4] ['text'] == seznam_tlacitek[p*3+8] ['text'] != "":
-			print (f"Vyhrál hráč {seznam_tlacitek[p*3] ['text']}")
+	for p in range(a-3+1):
+		if seznam_tlacitek[p*b] ['text'] == seznam_tlacitek[p*b+b+1] ['text'] == seznam_tlacitek[p*b+2*b+2] ['text'] != "":
+			print (f"Vyhrál hráč {seznam_tlacitek[p*b] ['text']}")
+	#Vyhrává diagonála z prava do leva
+	for k in range(a-3+1):
+		if seznam_tlacitek[k*b+2] ['text'] == seznam_tlacitek[k*b+2+b-1] ['text'] == seznam_tlacitek[k*b+2+2*b-2] ['text'] != "":
+			print (f"Vyhrál hráč {seznam_tlacitek[k*b+2] ['text']}")
 
 velikost_pole(a,b)   
 master.mainloop()

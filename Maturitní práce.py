@@ -41,6 +41,9 @@ def change_turn():
 		vyhodnoceni_5()
 	elif r == 3:
 		vyhodnoceni_3()
+	elif r != 3 != 5:
+		print("Špatně zadaná hodnota pro počet vítězných políček")
+		exit()
 
 #Funkce, která vytváří další funkce.
 def create_functions(tlacitko_funkce):

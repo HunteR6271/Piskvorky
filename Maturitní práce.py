@@ -11,7 +11,7 @@ print("Zadej počet sloupců: ")
 b = int(input())
 
 #Zadání hodnoty pro výběr modu hry.
-print("Nakolik vítězných políček chceš hrát? Pokud na tři napiš 3, pokud na pět napiš 5")
+print("Nakolik vítězných políček chceš hrát? Pokud na tři napiš 3, pokud na pět napiš 5.")
 r = int(input())
 
 #Funkce vykreslení pole

@@ -64,17 +64,17 @@ def vyhodnoceni_3():
 	for i in range(a-2):
 		for z in range(b):
 			if seznam_tlacitek[z+b*i] ['text'] == seznam_tlacitek[z+b+b*i] ['text'] == seznam_tlacitek[z+2*b+b*i] ['text'] != "":
-				print (f"Vyhrál hráč {seznam_tlacitek[z+b*i] ['text']}")
+				print (f"Vyhrál hráč s {seznam_tlacitek[z+b*i] ['text']}")
 	#Vyhráva diagonála z leva do prava
 	for d in range(b-2):
 		for p in range(a-2):
 			if seznam_tlacitek[p*b+d] ['text'] == seznam_tlacitek[p*b+b+1+d] ['text'] == seznam_tlacitek[p*b+2*b+2+d] ['text'] != "":
-				print (f"Vyhrál hráč {seznam_tlacitek[p*b+d] ['text']}")
+				print (f"Vyhrál hráč s {seznam_tlacitek[p*b+d] ['text']}")
 	#Vyhrává diagonála z prava do leva
 	for d in range(b-2): 
 		for k in range(a-2):
 			if seznam_tlacitek[k*b+2+d] ['text'] == seznam_tlacitek[k*b+2+b-1+d] ['text'] == seznam_tlacitek[k*b+2+2*b-2+d] ['text'] != "":
-				print (f"Vyhrál hráč {seznam_tlacitek[k*b+2+d] ['text']}")
+				print (f"Vyhrál hráč s {seznam_tlacitek[k*b+2+d] ['text']}")
 	#Remíza
 	kontrola = True
 	for button in seznam_tlacitek:
@@ -89,22 +89,22 @@ def vyhodnoceni_5():
 	for z in range(b-4):
 		for i in range(a):
 			if seznam_tlacitek[b*i+z] ['text'] == seznam_tlacitek[b*i+1+z] ['text'] == seznam_tlacitek[b*i+2+z] ['text'] == seznam_tlacitek[b*i+3+z] ['text'] == seznam_tlacitek[b*i+4+z] ['text'] != "":
-				print (f"Vyhrál hráč {seznam_tlacitek[b*i+z] ['text']}")
+				print (f"Vyhrál hráč s {seznam_tlacitek[b*i+z] ['text']}")
 	#Vyhrává sloupec
 	for i in range(a-4):
 		for z in range(b):
 			if seznam_tlacitek[z+b*i] ['text'] == seznam_tlacitek[z+b+b*i] ['text'] == seznam_tlacitek[z+2*b+b*i] ['text'] == seznam_tlacitek[z+3*b+b*i] ['text'] == seznam_tlacitek[z+4*b+b*i] ['text'] != "":
-				print (f"Vyhrál hráč {seznam_tlacitek[z+b*i] ['text']}")
+				print (f"Vyhrál hráč s {seznam_tlacitek[z+b*i] ['text']}")
 	#Vyhráva diagonála z leva do prava
 	for d in range(b-4):
 		for p in range(a-4):
 			if seznam_tlacitek[p*b+d] ['text'] == seznam_tlacitek[p*b+b+1+d] ['text'] == seznam_tlacitek[p*b+2*b+2+d] ['text'] == seznam_tlacitek[p*b+3*b+3+d] ['text'] == seznam_tlacitek[p*b+4*b+4+d] ['text'] != "":
-				print (f"Vyhrál hráč {seznam_tlacitek[p*b+d] ['text']}")
+				print (f"Vyhrál hráč s {seznam_tlacitek[p*b+d] ['text']}")
 	#Vyhrává diagonála z prava do leva
 	for d in range(b-4): 
 		for k in range(a-4):
 			if seznam_tlacitek[k*b+2+d] ['text'] == seznam_tlacitek[k*b+2+b-1+d] ['text'] == seznam_tlacitek[k*b+2+2*b-2+d] ['text'] == seznam_tlacitek[k*b+2+3*b-3+d] ['text'] == seznam_tlacitek[k*b+2+4*b-4+d] ['text'] != "":
-				print (f"Vyhrál hráč {seznam_tlacitek[k*b+2+d] ['text']}")
+				print (f"Vyhrál hráč s {seznam_tlacitek[k*b+2+d] ['text']}")
 	#Remíza
 	kontrola = True
 	for button in seznam_tlacitek:

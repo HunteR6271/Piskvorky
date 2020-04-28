@@ -95,12 +95,12 @@ def vyhodnoceni_5():
 		for z in range(b):
 			if seznam_tlacitek[z+b*i] ['text'] == seznam_tlacitek[z+b+b*i] ['text'] == seznam_tlacitek[z+2*b+b*i] ['text'] == seznam_tlacitek[z+3*b+b*i] ['text'] == seznam_tlacitek[z+4*b+b*i] ['text'] != "":
 				print (f"Vyhrál hráč s {seznam_tlacitek[z+b*i] ['text']}")
-	#Vyhráva diagonála z leva do prava
+	#Vyhráva diagonála zleva doprava
 	for d in range(b-4):
 		for p in range(a-4):
 			if seznam_tlacitek[p*b+d] ['text'] == seznam_tlacitek[p*b+b+1+d] ['text'] == seznam_tlacitek[p*b+2*b+2+d] ['text'] == seznam_tlacitek[p*b+3*b+3+d] ['text'] == seznam_tlacitek[p*b+4*b+4+d] ['text'] != "":
 				print (f"Vyhrál hráč s {seznam_tlacitek[p*b+d] ['text']}")
-	#Vyhrává diagonála z prava do leva
+	#Vyhrává diagonála zprava doleva
 	for d in range(b-4): 
 		for k in range(a-4):
 			if seznam_tlacitek[k*b+2+d] ['text'] == seznam_tlacitek[k*b+2+b-1+d] ['text'] == seznam_tlacitek[k*b+2+2*b-2+d] ['text'] == seznam_tlacitek[k*b+2+3*b-3+d] ['text'] == seznam_tlacitek[k*b+2+4*b-4+d] ['text'] != "":

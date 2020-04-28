@@ -41,7 +41,7 @@ def change_turn():
 		vyhodnoceni_5()
 	elif r == 3:
 		vyhodnoceni_3()
-	elif r != 3 != 5:
+	else:
 		print("Špatně zadaná hodnota pro počet vítězných políček")
 		exit()
 

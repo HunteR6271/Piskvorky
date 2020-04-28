@@ -80,7 +80,7 @@ def vyhodnoceni_3():
 	for button in seznam_tlacitek:
 		if button ['text'] == "":
 			kontrola = False
-	if kontrola == True:
+	if kontrola:
 		print("Remíza")
 
 #Funkce vyhodnocení kdo vyhrál na 5 políček za sebou. 
@@ -110,7 +110,7 @@ def vyhodnoceni_5():
 	for button in seznam_tlacitek:
 		if button ['text'] == "":
 			kontrola = False
-	if kontrola == True:
+	if kontrola:
 		print("Remíza")
 
 velikost_pole(a,b)   

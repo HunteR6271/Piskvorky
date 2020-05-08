@@ -5,18 +5,18 @@ master.title("Piškvorky")
 seznam_tlacitek = []
 
 #Zadání hodnot pro velikost pole.
-print("Zadej počet řádků: ")
+print("Zadejte počet řádků: ")
 a = int(input())
-print("Zadej počet sloupců: ")
+print("Zadejte počet sloupců: ")
 b = int(input())
 
 #Zadání hodnoty pro výběr modu hry.
-print("Nakolik vítězných políček chceš hrát? Pokud na tři napiš 3, pokud na pět napiš 5.")
+print("Nakolik vítězných políček chcete hrát? Pokud na tři napište 3, pokud na pět napište 5.")
 r = int(input())
 
 #Funkce vykreslení pole
 def velikost_pole(a,b):
-	print("Hraješ hru",a,"x",b,"na",r,"vítězných polí." )
+	print("Hrajete hru",a,"x",b,"na",r,"vítězných polí." )
 	for x in range(a):
 		for y in range(b):
 			button = Button(master, text="", height=2, width=5, font="Helvetica 15 bold", bg='grey', fg='white')
@@ -65,12 +65,12 @@ def vyhodnoceni_3():
 		for z in range(b):
 			if seznam_tlacitek[z+b*i] ['text'] == seznam_tlacitek[z+b+b*i] ['text'] == seznam_tlacitek[z+2*b+b*i] ['text'] != "":
 				print (f"Vyhrál hráč s {seznam_tlacitek[z+b*i] ['text']}")
-	#Vyhráva diagonála z leva do prava
+	#Vyhráva diagonála zleva doprava
 	for d in range(b-2):
 		for p in range(a-2):
 			if seznam_tlacitek[p*b+d] ['text'] == seznam_tlacitek[p*b+b+1+d] ['text'] == seznam_tlacitek[p*b+2*b+2+d] ['text'] != "":
 				print (f"Vyhrál hráč s {seznam_tlacitek[p*b+d] ['text']}")
-	#Vyhrává diagonála z prava do leva
+	#Vyhrává diagonála zprava doleva
 	for d in range(b-2): 
 		for k in range(a-2):
 			if seznam_tlacitek[k*b+2+d] ['text'] == seznam_tlacitek[k*b+2+b-1+d] ['text'] == seznam_tlacitek[k*b+2+2*b-2+d] ['text'] != "":
